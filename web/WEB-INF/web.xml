@@ -30,7 +30,7 @@
 
     <context-param>
         <param-name>dbPassword</param-name>
-        <param-value>tonnyeliokyomo7</param-value>
+        <param-value>tonnyeliokyomo</param-value>
     </context-param>
 
     <!--<servlet>-->

@@ -13,7 +13,9 @@
   <body>
     <div class="container">
         <%--Header Section--%>
-        <header class="text-center"> <%@include file="header.jsp"%> </header>
+        <header class="text-center">
+            <%@include file="header.jsp"%>
+        </header>
         <%--Main Content Of The Page--%>
         <article class="text-center">
             <h1 class="page-header">Registration Form</h1>
@@ -35,6 +37,7 @@
                 <div class="form-group">
                     <div class="col-md-5 col-md-offset-4">
                         <input type="submit" name="btnRegister" value="Register" class="btn btn-primary">
+                        <%--<jsp:forward page="login.jsp"/>--%>
                     </div>
                 </div>
             </form>

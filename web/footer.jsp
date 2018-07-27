@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <div class="row">
-    <p class="text-center">Copyright &copy; Learning JSP -
+    <p>Copyright &copy; Learning JSP -
         <%= Calendar.getInstance().get(Calendar.YEAR) %></p>
 </div>
 

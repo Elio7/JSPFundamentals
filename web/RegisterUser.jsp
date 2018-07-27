@@ -8,11 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" import="java.sql.*,java.util.*" errorPage="error.jsp" %>
 <%!
     private Connection con = null;
-    private boolean createUser(String username, String Password) {
+    private boolean createUser(String userName, String Password) {
         try {
             String sql = "INSERT INTO Users VALUES(?,?)";
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1,username);
+            ps.setString(1,userName);
             ps.setString(2,Password);
             int rs = ps.executeUpdate();
             if (rs > 0)
@@ -31,7 +31,7 @@
     String driverClass = "com.mysql.cj.jdbc.Driver";
     String driverUrl =  "jdbc:mysql://localhost:3306/JSP?useSSL=false";
     String dbuser = "root";
-    String dbpassword =  "tonnyeliokyomo7";
+    String dbpassword =  "tonnyeliokyomo";
 
     try {
         Class.forName(driverClass);

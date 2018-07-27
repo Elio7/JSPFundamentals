@@ -12,7 +12,9 @@
     </head>
     <body>
         <div class="container">
-            <header class="text-center"> <%@include file="header.jsp"%> </header>
+            <header class="text-center">
+                <%@include file="header.jsp"%>
+            </header>
 
             <article class="text-center">
                 <br>
@@ -21,7 +23,7 @@
                   <form name="loginForm" class="form-inline" action="authenticUser.jsp" method="post">
                       <div class="form-group">
                           <label class="control-label">Username </label>
-                          <input type="Login" class="form-control" name="userLogin" placeholder="Enter Username:">
+                          <input type="text" class="form-control" name="userLogin" placeholder="Enter Username:">
                       </div>
                       <br>
                       <br>

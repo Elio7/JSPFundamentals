@@ -1,4 +1,3 @@
-<%--<%@ page import="java.util.Calendar" %>--%>
 <%--
   Created by IntelliJ IDEA.
   User: Tony
@@ -28,7 +27,7 @@
             </div>
 
             <div class="row"> <!--This is used to make the content division in a row format-->
-                <%--<center> <!--This is used to display it at the center-->--%>
+                <center> <!--This is used to display it at the center-->
                     <form class="form-inline" action="Registration.jsp"> <!--This is used to make a form to be filled and
                     submitted and redirect the page to Registration.jsp-->
                         <div class="form-group"> <!--This is used to group the form elements together-->
@@ -40,16 +39,18 @@
                             <input type="submit" class="btn btn-primary" value="Search">
                         </div>
                     </form>
-                <%--</center>--%>
+                </center>
             </div>
             <div>
                 <br>
                 <!--btn = button, btn-lg = displays a large button, btn-success = displays button in green color-->
                 <p class="text-center"><a href="Registration.jsp" class="btn btn-lg btn-success">View all Courses</a></p>
             </div>
+
             <div class="row">
-                <p>New Users: <a href="Registration.jsp">Register Here</a></p>
+                <p>New User: <a href="Registration.jsp">Register Here</a></p>
             </div>
+
             <div class="row">
                 <p>Existing User: <a href="login.jsp">Login Here</a> </p>
             </div>

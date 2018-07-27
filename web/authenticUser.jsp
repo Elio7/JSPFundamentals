@@ -8,11 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" import="java.sql.*,java.util.*" errorPage="error.jsp" %>
 <%!
     private Connection con;
-    private boolean isValidUser(String username, String Password) {
+    private boolean isValidUser(String userName, String Password) {
         try {
             String sql = ("SELECT * FROM Users WHERE UserName = ? AND UserPassword = ?");
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1,username);
+            ps.setString(1,userName);
             ps.setString(2,Password);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -32,7 +32,7 @@
     String driverClass = "com.mysql.cj.jdbc.Driver";
     String driverUrl = "jdbc:mysql://localhost:3306/JSP?useSSL=false";
     String dbuser = "root";
-    String dbpassword = "tonnyeliokyomo7";
+    String dbpassword = "tonnyeliokyomo";
 
     try {
         Class.forName(driverClass);
